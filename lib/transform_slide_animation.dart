@@ -46,7 +46,7 @@ class _TransformSlideState extends State<TransformSlide>
     );
 
     transformAnimation = // start from zero : 90 - 0.01 (to remain a part be visible)
-        Tween<double>(begin: 0.0, end: math.pi / 2 - 0.01)
+        Tween<double>(begin: 0.0, end: math.pi / 2 - 0.02)
             .animate(CurvedAnimation(
       parent: transformAnimationController,
       curve: widget.curve,
@@ -95,7 +95,7 @@ class _TransformSlideState extends State<TransformSlide>
             right: 0.0,
             height: screenHeight,
             child: GestureDetector(
-              onVerticalDragDown: (details) {
+              onTap: () {
                 setState(() {
                   transformAnimationController.forward();
                   slideAnimationController.forward();

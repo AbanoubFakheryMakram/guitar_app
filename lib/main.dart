@@ -181,7 +181,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
 
   Widget screenTwo(screenWidth) {
     return Container(
-      color: Colors.amber[50],
+      color: Colors.amber[100],
       width: screenWidth,
       child: Padding(
         padding: EdgeInsets.all(ScreenUtil().setWidth(22)),
@@ -195,7 +195,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                 child: IconButton(
                   icon: Icon(
                     Icons.arrow_drop_down_circle,
-                    color: Colors.grey,
+                    color: Colors.amber,
                     size: 32,
                   ),
                   onPressed: () {
